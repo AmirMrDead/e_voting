@@ -2,7 +2,7 @@ package entity;
 
 import base.BaseEntity;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Result implements BaseEntity {
 

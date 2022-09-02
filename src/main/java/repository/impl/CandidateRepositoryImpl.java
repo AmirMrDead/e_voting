@@ -55,12 +55,26 @@ public class CandidateRepositoryImpl implements CandidateRepository {
 
     @Override
     public void update(Candidate candidate, int id) throws SQLException {
-
-
+        String query = """
+                update candidate set username = ? and  password = ? where id = ?
+                """;
+        try(PreparedStatement ps = AppConenction.getConnection().prepareStatement(query)){
+            ps.setString(1,candidate.getUsername());
+            ps.setString(2,candidate.getPassword());
+            ps.setInt(3,id);
+            ps.executeUpdate();
+        }
     }
 
     @Override
-    public void delete(Candidate candidate) throws SQLException {
+    public void delete(int id) throws SQLException {
+        String query = """
+                delete from candidate where id = ?
+                """;
+        try(PreparedStatement ps = AppConenction.getConnection().prepareStatement(query)){
+            ps.setInt(1,id);
+            ps.executeUpdate();
+        }
 
     }
 }

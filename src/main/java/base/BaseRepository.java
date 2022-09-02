@@ -9,6 +9,6 @@ public interface BaseRepository<T> {
 
     void update(T t , int id)throws SQLException;
 
-    void delete(T t)throws SQLException;
+    void delete(int id)throws SQLException;
 
 }

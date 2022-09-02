@@ -1,5 +1,7 @@
 package entity;
 
+import base.BaseEntity;
+
 public class Register implements BaseEntity {
 
     private Integer id;

@@ -1,5 +1,7 @@
 package entity;
 
+import base.BaseEntity;
+
 import java.util.Date;
 
 public class Result implements BaseEntity {

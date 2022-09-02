@@ -1,6 +1,8 @@
 package entity;
 
-public class Permission implements BaseEntity{
+import base.BaseEntity;
+
+public class Permission implements BaseEntity {
 
     private Integer id;
     private int roleId;

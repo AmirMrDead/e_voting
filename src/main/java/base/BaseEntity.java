@@ -1,4 +1,4 @@
-package entity;
+package base;
 
 public interface BaseEntity {
 

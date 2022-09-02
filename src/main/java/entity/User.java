@@ -1,6 +1,8 @@
 package entity;
 
-import java.util.Date;
+import base.BaseEntity;
+
+import java.sql.Date;
 
 public abstract class User implements BaseEntity {
 
